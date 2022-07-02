@@ -39,3 +39,14 @@ testem.log
 Thumbs.db
 
 .angular
+
+#yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+## if you're interested to know more about each of these files:
+## https://yarnpkg.com/getting-started/qa#why-should-you-upgrade-to-yarn-modern
