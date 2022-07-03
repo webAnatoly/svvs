@@ -60,7 +60,8 @@
           "browserTarget": "frontend-client:build:production"
         },
         "development": {
-          "browserTarget": "frontend-client:build:development"
+          "browserTarget": "frontend-client:build:development",
+          "port": 4222
         }
       },
       "defaultConfiguration": "development"

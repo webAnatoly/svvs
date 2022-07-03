@@ -60,7 +60,8 @@
           "browserTarget": "frontend-admin:build:production"
         },
         "development": {
-          "browserTarget": "frontend-admin:build:development"
+          "browserTarget": "frontend-admin:build:development",
+          "port": 4223
         }
       },
       "defaultConfiguration": "development"
