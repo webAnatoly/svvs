@@ -8,5 +8,4 @@ assignees: webAnatoly
 ---
 
 ## К выполнению:
-
 - [ ] ...
