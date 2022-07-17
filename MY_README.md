@@ -11,3 +11,6 @@ https://yarnpkg.com/getting-started/install
 
 ### Инструкция по обновлению yarn до 3-й версии в существующем проекте
 https://yarnpkg.com/getting-started/migration
+
+### Полезные ссылки
+[Tags](https://nx.dev/structure/monorepo-tags)
