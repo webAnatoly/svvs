@@ -13,10 +13,7 @@
         "polyfills": "apps/frontend/client/src/polyfills.ts",
         "tsConfig": "apps/frontend/client/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/frontend/client/src/favicon.ico",
-          "apps/frontend/client/src/assets"
-        ],
+        "assets": ["apps/frontend/client/src/favicon.ico", "apps/frontend/client/src/assets"],
         "styles": ["apps/frontend/client/src/styles.scss"],
         "scripts": []
       },
@@ -64,7 +61,10 @@
           "port": 4222
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend/client/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -75,10 +75,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/frontend/client/**/*.ts",
-          "apps/frontend/client/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/frontend/client/**/*.ts", "apps/frontend/client/**/*.html"]
       }
     },
     "test": {
