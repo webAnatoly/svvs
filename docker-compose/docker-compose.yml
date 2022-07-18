@@ -1,5 +1,13 @@
 version: '3.1'
 
+# Using the “--env-file” option
+# By passing the file as an argument, you can store it anywhere and name it appropriately,
+# for example, .env.ci, .env.dev, .env.prod. Passing the file path is done using the --env-file option:
+# docker compose --env-file ./config/.env.dev up
+
+# Еще пример с указание путей к файлу docker-compose.yml и к файлу переменных окружения
+# docker-compose --file=docker-compose/docker-compose.yml --env-file=.env_configs/.env.development.local up
+
 services:
   postgres:
     image: postgres:13-alpine
