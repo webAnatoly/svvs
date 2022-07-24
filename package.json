@@ -13,7 +13,9 @@
     "frontend-admin:test": "nx test frontend-admin",
     "frontend-api:start": "nx serve frontend-api",
     "frontend-api:build": "nx build frontend-api",
-    "frontend-api:test": "nx test frontend-api"
+    "frontend-api:test": "nx test frontend-api",
+    "db:start": "docker-compose --file=docker-compose/docker-compose.yml --env-file=.env_configs/.env.development.local up -d",
+    "db:stop": "docker-compose --file=docker-compose/docker-compose.yml --env-file=.env_configs/.env.development.local stop"
   },
   "private": true,
   "dependencies": {
