@@ -11,9 +11,9 @@
     "frontend-admin:start": "nx serve frontend-admin",
     "frontend-admin:build": "nx build frontend-admin",
     "frontend-admin:test": "nx test frontend-admin",
-    "frontend-api:start": "nx serve frontend-api",
-    "frontend-api:build": "nx build frontend-api",
-    "frontend-api:test": "nx test frontend-api",
+    "backend-api:start": "nx serve backend-api",
+    "backend-api:build": "nx build backend-api",
+    "backend-api:test": "nx test backend-api",
     "db:start": "docker-compose --file=docker-compose/docker-compose.yml --env-file=.env_configs/.env.development.local up -d",
     "db:stop": "docker-compose --file=docker-compose/docker-compose.yml --env-file=.env_configs/.env.development.local stop"
   },
