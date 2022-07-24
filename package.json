@@ -10,7 +10,10 @@
     "test:frontend-client": "nx test frontend-client",
     "start:frontend-admin": "nx serve frontend-admin",
     "build:frontend-admin": "nx build frontend-admin",
-    "test:frontend-admin": "nx test frontend-admin"
+    "test:frontend-admin": "nx test frontend-admin",
+    "frontend-api:start": "nx serve frontend-api",
+    "frontend-api:build": "nx build frontend-api",
+    "frontend-api:test": "nx test frontend-api"
   },
   "private": true,
   "dependencies": {
