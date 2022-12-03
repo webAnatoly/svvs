@@ -14,3 +14,6 @@ https://yarnpkg.com/getting-started/migration
 
 ### Полезные ссылки
 [Tags](https://nx.dev/structure/monorepo-tags)
+
+### Закладки
+https://www.youtube.com/watch?v=w_J8dGSPHZU&list=PLlybL_DCW52pbuYaPt6Qiix7ta6RmZRJ3&index=6&ab_channel=SVVS

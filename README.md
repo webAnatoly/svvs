@@ -103,3 +103,23 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+##  How to start backend on my Linux with environment variables stored in key value file.
+To run backend we need run it with correct environment variables.
+That environment variables not should be in the `.git`, and they can be in `.env` file,
+but I store them in `.env_configs/` directory.
+
+The format is just key value pairs, where key is name of environment variable.
+#### Example of format of environment variables file:
+DB_TYPE=value  
+DB_NAME=value  
+DB_HOST=value  
+DB_HOST_NAME=value  
+DB_PORT=value  
+
+To start backand with environment variables from <path_to_env_file>
+I need export them into terminal.
+### How to export environment variables from any file on Linux in bash before run any app/utils
+`export $(grep -v '^#' <path_to_env_file> | xargs -d '\n') &&  yarn backend-api:start`
+The command on my linux looks like this:
+`export $(grep -v '^#' .env_configs/.env.development.local | xargs -d '\n') &&  yarn backend-api:start`
